@@ -1,0 +1,42 @@
+{
+  "name": "pi-doeixd-optmem",
+  "version": "0.1.0",
+  "description": "pi/omp extension for doeixd's OptMem: permanent project-scoped and global memory with session provenance",
+  "type": "module",
+  "license": "0BSD",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "omp",
+    "agent-memory",
+    "optmem"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnrichardrinehart/pi-doeixd-optmem.git"
+  },
+  "homepage": "https://github.com/johnrichardrinehart/pi-doeixd-optmem#readme",
+  "bugs": {
+    "url": "https://github.com/johnrichardrinehart/pi-doeixd-optmem/issues"
+  },
+  "files": [
+    "extension.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./extension.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
